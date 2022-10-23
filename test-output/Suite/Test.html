@@ -1,0 +1,1899 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>43/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Jun 21 12:27:21 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>152 seconds (152414 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td>user </td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Scenarios.employerDataScenarios.whenMeasureResponseTime_thenOK()'><b>whenMeasureResponseTime_thenOK</b><br>Test class: Scenarios.employerDataScenarios<br/>
+<a href="#Output-650608468" onClick='toggleBox("Output-650608468", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-650608468" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-650608468">
+whenMeasureResponseTime_thenOK employerData----Started<br/>
+*****************************************************<br/>
+Time in Completion 2159<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Failed expected [Time taken is not 2000ms , it is  : 2159ms] but found [false]
+	at Scenarios.employerDataScenarios.whenMeasureResponseTime_thenOK(employerDataScenarios.java:315)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace650608468", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace650608468'><pre>java.lang.AssertionError: Failed expected [Time taken is not 2000ms , it is  : 2159ms] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at Scenarios.employerDataScenarios.whenMeasureResponseTime_thenOK(employerDataScenarios.java:315)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>2</td>
+<td>Scenarios.employerDataScenarios@36902638</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Scenarios.bankAccountSignatureScenarios.updateEmployeeSignature()'><b>updateEmployeeSignature</b><br>Test class: Scenarios.bankAccountSignatureScenarios<br/>
+<a href="#Output-477319344" onClick='toggleBox("Output-477319344", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-477319344" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-477319344">
+updateEmployeeSignature----Started<br/>
+*****************************************************<br/>
+bankAccountSignature----Started<br/>
+*****************************************************<br/>
+StatusCode:  200<br/>
+Passed: StatusCode is  200{
+    "returnStatus": true,
+    "statusCode": 200,
+    "returnMessage": [
+        "Employer Bank Account Signature Image successfully updated."
+    ],
+    "errors": {
+        
+    },
+    "data": {
+        "imageUrl": "https://payrollwhitelabelapi.blob.core.windows.net/uploads/signatureimages/signature_580039d5_03bb_462c_8633_e9b6c6585716.jpg?sv=2019-07-07&sr=b&sig=NEteI3dUq9gwcf4Yra4tpPAZM%2BbDD%2BU%2Fj1QiQy6TDcc%3D&se=2022-06-21T08%3A44%3A44Z&sp=r"
+    }
+}<br/>
+*****************************************************<br/>
+bankAccountSignature----Completed<br/>
+*****************************************************<br/>
+updateEmployeeSignature----Completed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Scenarios.bankAccountSignatureScenarios@49ec71f8</td></tr>
+<tr>
+<td title='Scenarios.bankAccountSignatureScenarios.bankAccountSignatureWrongFileSize()'><b>bankAccountSignatureWrongFileSize</b><br>Test class: Scenarios.bankAccountSignatureScenarios<br/>
+<a href="#Output-1553544410" onClick='toggleBox("Output-1553544410", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1553544410" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1553544410">
+bankAccountSignatureWrongFileSize----Started<br/>
+*****************************************************<br/>
+bankAccountSignature----Started<br/>
+*****************************************************<br/>
+StatusCode:  400<br/>
+Passed: StatusCode is  400{
+    "statusCode": 400,
+    "message": "Validation failed.",
+    "errors": [
+        {
+            "field": "Image",
+            "message": "Size of the Signature Image should be 240 x 43 pixels."
+        }
+    ]
+}<br/>
+*****************************************************<br/>
+bankAccountSignature----Completed<br/>
+*****************************************************<br/>
+bankAccountSignatureWrongFileSize----Completed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Scenarios.bankAccountSignatureScenarios@49ec71f8</td></tr>
+<tr>
+<td title='Scenarios.employerDataScenarios.getEmployerDataNegative()'><b>getEmployerDataNegative</b><br>Test class: Scenarios.employerDataScenarios<br/>
+<a href="#Output-646710031" onClick='toggleBox("Output-646710031", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-646710031" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-646710031">
+CreateEmployer----Started<br/>
+*****************************************************<br/>
+createEmployer----Started<br/>
+*****************************************************<br/>
+StatusCode:  200<br/>
+Passed: StatusCode is 200<br/>
+*****************************************************<br/>
+createEmployer----Completed<br/>
+*****************************************************<br/>
+CreateEmployer----Completed<br/>
+Invalid ID for page 0----Started<br/>
+*****************************************************<br/>
+getEmployerDetails----Started<br/>
+*****************************************************<br/>
+StatusCode:  400<br/>
+Passed: StatusCode is 400<br/>
+*****************************************************<br/>
+createEmployer----Completed<br/>
+*****************************************************<br/>
+Invalid ID for page 0----Completed<br/>
+All fields are blank----Started<br/>
+*****************************************************<br/>
+getEmployerDetails----Started<br/>
+*****************************************************<br/>
+StatusCode:  400<br/>
+Passed: StatusCode is 400<br/>
+*****************************************************<br/>
+createEmployer----Completed<br/>
+*****************************************************<br/>
+All fields are flank----Completed<br/>
+</div>
+</td>
+<td></td>
+<td>61</td>
+<td>Scenarios.employerDataScenarios@36902638</td></tr>
+<tr>
+<td title='Scenarios.createUserScenarios.createUserWithWrongStatusTypeString()'><b>createUserWithWrongStatusTypeString</b><br>Test class: Scenarios.createUserScenarios<br/>
+<a href="#Output-182124057" onClick='toggleBox("Output-182124057", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-182124057" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-182124057">
+createUserWithWrongStatusTypeString----Started<br/>
+*****************************************************<br/>
+createSingleUser----Started<br/>
+*****************************************************<br/>
+StatusCode:  400<br/>
+Passed: StatusCode is  400{
+    "errors": {
+        "status": [
+            "Unexpected character encountered while parsing value: s. Path 'status', line 1, position 107.",
+            "Unexpected character encountered while parsing value: a. Path 'status', line 1, position 107."
+        ]
+    },
+    "type": "https://tools.ietf.org/html/rfc7231#section-6.5.1",
+    "title": "One or more validation errors occurred.",
+    "status": 400,
+    "traceId": "00-6a1cfea76a20f712c99054b66bed9324-9e195efe906896e3-00"
+}<br/>
+*****************************************************<br/>
+createSingleUser----Completed<br/>
+*****************************************************<br/>
+createUserWithWrongStatusTypeString----Completed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Scenarios.createUserScenarios@3febb011</td></tr>
+<tr>
+<td title='Scenarios.getUserNameScenarios.whenMeasureResponseTime_thenOK()'><b>whenMeasureResponseTime_thenOK</b><br>Test class: Scenarios.getUserNameScenarios<br/>
+<a href="#Output-334761329" onClick='toggleBox("Output-334761329", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-334761329" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-334761329">
+whenMeasureResponseTime_thenOK getUserName----Started<br/>
+*****************************************************<br/>
+createSingleUser----Started<br/>
+*****************************************************<br/>
+StatusCode:  200<br/>
+Passed: StatusCode is  200{
+    "returnStatus": true,
+    "statusCode": 200,
+    "returnMessage": [
+        
+    ],
+    "errors": {
+        
+    },
+    "data": {
+        "isUserAdded": true,
+        "message": "User added successfully."
+    }
+}<br/>
+*****************************************************<br/>
+createSingleUser----Completed<br/>
+Time in Completion 101<br/>
+*****************************************************<br/>
+whenMeasureResponseTime_thenOK getUserName----Completed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Scenarios.getUserNameScenarios@8f4ea7c</td></tr>
+<tr>
+<td title='Scenarios.bankAccountSignatureScenarios.bankAccountSignatureWrongFileFormatCsv()'><b>bankAccountSignatureWrongFileFormatCsv</b><br>Test class: Scenarios.bankAccountSignatureScenarios<br/>
+<a href="#Output-1062831184" onClick='toggleBox("Output-1062831184", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1062831184" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1062831184">
+bankAccountSignatureWrongFileFormatCsv----Started<br/>
+*****************************************************<br/>
+bankAccountSignature----Started<br/>
+*****************************************************<br/>
+StatusCode:  400<br/>
+Passed: StatusCode is  400{
+    "statusCode": 400,
+    "message": "Validation failed.",
+    "errors": [
+        {
+            "field": "Image",
+            "message": "This file format is not supported."
+        }
+    ]
+}<br/>
+*****************************************************<br/>
+bankAccountSignature----Completed<br/>
+*****************************************************<br/>
+bankAccountSignatureWrongFileFormatCsv----Completed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Scenarios.bankAccountSignatureScenarios@49ec71f8</td></tr>
+<tr>
+<td title='Scenarios.employeeLoginScenarios.whenMeasureResponseTime_thenOK()'><b>whenMeasureResponseTime_thenOK</b><br>Test class: Scenarios.employeeLoginScenarios<br/>
+<a href="#Output-1641677843" onClick='toggleBox("Output-1641677843", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1641677843" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1641677843">
+whenMeasureResponseTime_thenOK employeeLogin----Started<br/>
+*****************************************************<br/>
+Time in Completion 95<br/>
+*****************************************************<br/>
+whenMeasureResponseTime_thenOK employeeLogin----Completed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Scenarios.employeeLoginScenarios@223d2c72</td></tr>
+<tr>
+<td title='Scenarios.createUserScenarios.createMultipleUser()'><b>createMultipleUser</b><br>Test class: Scenarios.createUserScenarios<br/>
+<a href="#Output-732611751" onClick='toggleBox("Output-732611751", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-732611751" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-732611751">
+createMultipleUser----Started<br/>
+*****************************************************<br/>
+createMultipleUser----Started<br/>
+*****************************************************<br/>
+StatusCode:  200<br/>
+Passed: StatusCode is  200{
+    "returnStatus": true,
+    "statusCode": 200,
+    "returnMessage": [
+        
+    ],
+    "errors": {
+        
+    },
+    "data": {
+        "isUserAdded": true,
+        "message": "User added successfully."
+    }
+}<br/>
+*****************************************************<br/>
+createMultipleUser----Completed<br/>
+*****************************************************<br/>
+createMultipleUser----Completed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Scenarios.createUserScenarios@3febb011</td></tr>
+<tr>
+<td title='Scenarios.getCompanyAccountScenarios.getCompanyAccountDetails()'><b>getCompanyAccountDetails</b><br>Test class: Scenarios.getCompanyAccountScenarios<br/>
+<a href="#Output-989447607" onClick='toggleBox("Output-989447607", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-989447607" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-989447607">
+getCompanyAccountDetails----Started<br/>
+*****************************************************<br/>
+companyAccountDetails----Started<br/>
+*****************************************************<br/>
+StatusCode:  200<br/>
+Passed: StatusCode is 200{
+    "returnStatus": true,
+    "statusCode": 200,
+    "returnMessage": [
+        
+    ],
+    "errors": {
+        
+    },
+    "data": {
+        "accountId": 143,
+        "accountType": 3,
+        "accountStatus": 1,
+        "imageUrl": "https://payrollwhitelabelapi.blob.core.windows.net/uploads/images/signature_17a7fba8_2265_4f0e_a23f_83f48b4f7b33.jpg",
+        "fullName": "Onebcg",
+        "addressLine1": "132, woodrow",
+        "addressLine2": "",
+        "city": "New York",
+        "state": "NY",
+        "postalCode": "12345",
+        "countryCode": "91",
+        "phone": "7894561230",
+        "email": "qa.test63m@onebcg.com",
+        "taxIdType": 2,
+        "shortTaxIdentifier": "2121",
+        "timezone": "EASTERN STANDARD TIME"
+    }
+}<br/>
+*****************************************************<br/>
+companyAccountDetails----Completed<br/>
+*****************************************************<br/>
+getCompanyAccountDetails----Completed<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>Scenarios.getCompanyAccountScenarios@399f45b1</td></tr>
+<tr>
+<td title='Scenarios.verifyUserDetailsScenarios.whenMeasureResponseTime_thenOK()'><b>whenMeasureResponseTime_thenOK</b><br>Test class: Scenarios.verifyUserDetailsScenarios<br/>
+<a href="#Output-1706779253" onClick='toggleBox("Output-1706779253", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1706779253" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1706779253">
+whenMeasureResponseTime_thenOK for User Details----Started<br/>
+*****************************************************<br/>
+Time in Completion 109<br/>
+*****************************************************<br/>
+whenMeasureResponseTime_thenOK for User Details----Completed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Scenarios.verifyUserDetailsScenarios@1d2adfbe</td></tr>
+<tr>
+<td title='Scenarios.employerFilterScenarios.whenMeasureResponseTime_thenOK()'><b>whenMeasureResponseTime_thenOK</b><br>Test class: Scenarios.employerFilterScenarios<br/>
+<a href="#Output-1043170851" onClick='toggleBox("Output-1043170851", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1043170851" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1043170851">
+whenMeasureResponseTime_thenOK employerFilter----Started<br/>
+*****************************************************<br/>
+createEmployer----Started<br/>
+*****************************************************<br/>
+StatusCode:  200<br/>
+Passed: StatusCode is 200<br/>
+*****************************************************<br/>
+createEmployer----Completed<br/>
+Time in Completion 81<br/>
+*****************************************************<br/>
+whenMeasureResponseTime_thenOK employerFilter----Completed<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>Scenarios.employerFilterScenarios@10e31a9a</td></tr>
+<tr>
+<td title='Scenarios.forgetPasswordScenarios.whenMeasureResponseTime_thenOK()'><b>whenMeasureResponseTime_thenOK</b><br>Test class: Scenarios.forgetPasswordScenarios<br/>
+<a href="#Output-605884498" onClick='toggleBox("Output-605884498", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-605884498" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-605884498">
+createSingleUser----Started<br/>
+*****************************************************<br/>
+createSingleUser----Started<br/>
+*****************************************************<br/>
+StatusCode:  200<br/>
+Passed: StatusCode is  200{
+    "returnStatus": true,
+    "statusCode": 200,
+    "returnMessage": [
+        
+    ],
+    "errors": {
+        
+    },
+    "data": {
+        "isUserAdded": true,
+        "message": "User added successfully."
+    }
+}<br/>
+*****************************************************<br/>
+createSingleUser----Completed<br/>
+*****************************************************<br/>
+createSingleUser----Completed<br/>
+whenMeasureResponseTime_thenOK_For Get Access Token----Started<br/>
+*****************************************************<br/>
+Time in Completion 113<br/>
+*****************************************************<br/>
+whenMeasureResponseTime_thenOK_For Get Access Token----Completed<br/>
+whenMeasureResponseTime_thenOK_For update Password----Started<br/>
+*****************************************************<br/>
+Time in Completion 98<br/>
+*****************************************************<br/>
+whenMeasureResponseTime_thenOK_For update Password----Completed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Scenarios.forgetPasswordScenarios@158d2680</td></tr>
+<tr>
+<td title='Scenarios.updateCompanyAccountScenarios.whenMeasureResponseTime_thenOK()'><b>whenMeasureResponseTime_thenOK</b><br>Test class: Scenarios.updateCompanyAccountScenarios<br/>
+<a href="#Output-1287967828" onClick='toggleBox("Output-1287967828", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1287967828" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1287967828">
+whenMeasureResponseTime_thenOK for updateCompanyAccount----Started<br/>
+*****************************************************<br/>
+Time in Completion 598<br/>
+*****************************************************<br/>
+whenMeasureResponseTime_thenOK for updateCompanyAccount----Completed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Scenarios.updateCompanyAccountScenarios@131774fe</td></tr>
+<tr>
+<td title='Scenarios.employerDataScenarios.createEmployerNegative()'><b>createEmployerNegative</b><br>Test class: Scenarios.employerDataScenarios<br/>
+<a href="#Output-1843324431" onClick='toggleBox("Output-1843324431", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1843324431" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1843324431">
+creatingEmployer----Started<br/>
+*****************************************************<br/>
+createEmployer----Started<br/>
+*****************************************************<br/>
+StatusCode:  200<br/>
+Passed: StatusCode is 200<br/>
+*****************************************************<br/>
+createEmployer----Completed<br/>
+*****************************************************<br/>
+creatingEmployer----Completed<br/>
+creatingEmployer----Started<br/>
+*****************************************************<br/>
+createEmployer----Started<br/>
+*****************************************************<br/>
+StatusCode:  200<br/>
+Passed: StatusCode is 200<br/>
+*****************************************************<br/>
+createEmployer----Completed<br/>
+*****************************************************<br/>
+creatingEmployer----Completed<br/>
+creatingEmployerWithBlankData----Started<br/>
+*****************************************************<br/>
+createEmployer----Started<br/>
+*****************************************************<br/>
+StatusCode:  400<br/>
+Passed: StatusCode is 400<br/>
+*****************************************************<br/>
+createEmployer----Completed<br/>
+*****************************************************<br/>
+creatingEmployerWithBlankData----Completed<br/>
+creatingEmployerWithMinimumChar----Started<br/>
+*****************************************************<br/>
+createEmployer----Started<br/>
+*****************************************************<br/>
+StatusCode:  400<br/>
+Passed: StatusCode is 400<br/>
+*****************************************************<br/>
+createEmployer----Completed<br/>
+*****************************************************<br/>
+creatingEmployerWithMinimumChar----Completed<br/>
+creatingEmployerWithMaximumChar----Started<br/>
+*****************************************************<br/>
+createEmployer----Started<br/>
+*****************************************************<br/>
+StatusCode:  400<br/>
+Passed: StatusCode is 400<br/>
+*****************************************************<br/>
+createEmployer----Completed<br/>
+*****************************************************<br/>
+creatingEmployerWithMaximumChar----Completed<br/>
+creatingEmployerWithWrongEmail----Started<br/>
+*****************************************************<br/>
+createEmployer----Started<br/>
+*****************************************************<br/>
+StatusCode:  400<br/>
+Passed: StatusCode is 400<br/>
+*****************************************************<br/>
+createEmployer----Completed<br/>
+*****************************************************<br/>
+creatingEmployerWithWrongEmail----Completed<br/>
+creatingEmployerWithInvalidSSN----Started<br/>
+*****************************************************<br/>
+createEmployer----Started<br/>
+*****************************************************<br/>
+StatusCode:  400<br/>
+Passed: StatusCode is 400<br/>
+*****************************************************<br/>
+createEmployer----Completed<br/>
+*****************************************************<br/>
+creatingEmployerWithInvalidSSN----Completed<br/>
+creatingEmployerWithInvalidEIN----Started<br/>
+*****************************************************<br/>
+createEmployer----Started<br/>
+*****************************************************<br/>
+StatusCode:  400<br/>
+Passed: StatusCode is 400<br/>
+*****************************************************<br/>
+createEmployer----Completed<br/>
+*****************************************************<br/>
+creatingEmployerWithInvalidEIN----Completed<br/>
+creatingEmployerWithduplicateSSN----Started<br/>
+*****************************************************<br/>
+createEmployer----Started<br/>
+*****************************************************<br/>
+StatusCode:  400<br/>
+Passed: StatusCode is 400<br/>
+*****************************************************<br/>
+createEmployer----Completed<br/>
+*****************************************************<br/>
+creatingEmployerWithduplicateSSN----Completed<br/>
+creatingEmployerWithduplicateEIN----Started<br/>
+*****************************************************<br/>
+createEmployer----Started<br/>
+*****************************************************<br/>
+StatusCode:  400<br/>
+Passed: StatusCode is 400<br/>
+*****************************************************<br/>
+createEmployer----Completed<br/>
+*****************************************************<br/>
+creatingEmployerWithduplicateEIN----Completed<br/>
+creatingEmployerWithInvalidCountryCode----Started<br/>
+*****************************************************<br/>
+createEmployer----Started<br/>
+*****************************************************<br/>
+StatusCode:  400<br/>
+Passed: StatusCode is 400<br/>
+*****************************************************<br/>
+createEmployer----Completed<br/>
+*****************************************************<br/>
+creatingEmployerWithInvalidCountryCode----Completed<br/>
+creatingEmployerWithInvalidBankAccountRTN----Started<br/>
+*****************************************************<br/>
+createEmployer----Started<br/>
+*****************************************************<br/>
+StatusCode:  400<br/>
+Passed: StatusCode is 400<br/>
+*****************************************************<br/>
+createEmployer----Completed<br/>
+*****************************************************<br/>
+creatingEmployerWithInvalidBankAccountRTN----Completed<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>Scenarios.employerDataScenarios@36902638</td></tr>
+<tr>
+<td title='Scenarios.createUserScenarios.createUserWithSpaceEmail()'><b>createUserWithSpaceEmail</b><br>Test class: Scenarios.createUserScenarios<br/>
+<a href="#Output-2037147839" onClick='toggleBox("Output-2037147839", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2037147839" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2037147839">
+createUserWithSpaceEmail----Started<br/>
+*****************************************************<br/>
+createSingleUser----Started<br/>
+*****************************************************<br/>
+StatusCode:  400<br/>
+Passed: StatusCode is  400{
+    "statusCode": 400,
+    "message": "Validation failed.",
+    "errors": [
+        {
+            "field": "Email",
+            "message": "Invalid email address."
+        }
+    ]
+}<br/>
+*****************************************************<br/>
+createSingleUser----Completed<br/>
+*****************************************************<br/>
+createUserWithSpaceEmail----Completed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Scenarios.createUserScenarios@3febb011</td></tr>
+<tr>
+<td title='Scenarios.createUserScenarios.createUserWithBlankRoleAndStatusValue()'><b>createUserWithBlankRoleAndStatusValue</b><br>Test class: Scenarios.createUserScenarios<br/>
+<a href="#Output-992054388" onClick='toggleBox("Output-992054388", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-992054388" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-992054388">
+createUserWithBlankRoleAndStatusValue----Started<br/>
+*****************************************************<br/>
+createSingleUser----Started<br/>
+*****************************************************<br/>
+StatusCode:  400<br/>
+Passed: StatusCode is  400{
+    "errors": {
+        "role": [
+            "Unexpected character encountered while parsing value: ,. Path 'role', line 1, position 93."
+        ],
+        "status": [
+            "Unexpected character encountered while parsing value: }. Path 'status', line 1, position 105.",
+            "Unexpected end when deserializing object. Path 'status', line 1, position 105."
+        ]
+    },
+    "type": "https://tools.ietf.org/html/rfc7231#section-6.5.1",
+    "title": "One or more validation errors occurred.",
+    "status": 400,
+    "traceId": "00-19f6a7a1aee1a6c6bdcb9cf2bb0cc34c-5da6d6c0dd762b66-00"
+}<br/>
+*****************************************************<br/>
+createSingleUser----Completed<br/>
+*****************************************************<br/>
+createUserWithBlankRoleAndStatusValue----Completed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Scenarios.createUserScenarios@3febb011</td></tr>
+<tr>
+<td title='Scenarios.updateCompanyAccountScenarios.updateCompanyAccount_NegativeScenarios()'><b>updateCompanyAccount_NegativeScenarios</b><br>Test class: Scenarios.updateCompanyAccountScenarios<br/>
+<a href="#Output-590486503" onClick='toggleBox("Output-590486503", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-590486503" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-590486503">
+updateCompanyAccount_NegativeScenarios----Started<br/>
+*****************************************************<br/>
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------<br/>
+Case 1:-updateCompanyAccountWithBlankData----Started<br/>
+*****************************************************<br/>
+updateCompanyAccount----Started<br/>
+*****************************************************<br/>
+StatusCode:  400<br/>
+Passed: StatusCode is 400{
+    "statusCode": 400,
+    "message": "Validation failed.",
+    "errors": [
+        {
+            "field": "Phone",
+            "message": "This field is required."
+        },
+        {
+            "field": "Email",
+            "message": "This field is required."
+        },
+        {
+            "field": "Ein",
+            "message": "This field is required."
+        },
+        {
+            "field": "CompanyName",
+            "message": "This field is required."
+        },
+        {
+            "field": "AddressLine1",
+            "message": "This field is required."
+        },
+        {
+            "field": "City",
+            "message": "This field is required."
+        },
+        {
+            "field": "State",
+            "message": "This field is required."
+        },
+        {
+            "field": "PostalCode",
+            "message": "This field is required."
+        },
+        {
+            "field": "PostalCode",
+            "message": "This field is required."
+        },
+        {
+            "field": "Timezone",
+            "message": "This field is required."
+        }
+    ]
+}<br/>
+*****************************************************<br/>
+updateCompanyAccount----Completed<br/>
+*****************************************************<br/>
+Case 1:-updateCompanyAccountWithBlankData----Completed<br/>
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------<br/>
+Case 2:-updateCompanyAccountWithLessThanDefinedInput----Started<br/>
+*****************************************************<br/>
+updateCompanyAccount----Started<br/>
+*****************************************************<br/>
+StatusCode:  400<br/>
+Passed: StatusCode is 400{
+    "statusCode": 400,
+    "message": "Validation failed.",
+    "errors": [
+        {
+            "field": "Phone",
+            "message": "Invalid Phone Number. Phone Number needs to be of 10 digits."
+        },
+        {
+            "field": "Email",
+            "message": "Invalid email address."
+        },
+        {
+            "field": "Ein",
+            "message": "EIN should be Numeric and the acceptable format is xx-xxxxxxx."
+        },
+        {
+            "field": "CompanyName",
+            "message": "Enter at least 2 characters and at most 100 characters."
+        },
+        {
+            "field": "AddressLine1",
+            "message": "Enter at least 2 characters and at most 50 characters."
+        },
+        {
+            "field": "City",
+            "message": "Enter at least 2 characters and at most 30 characters."
+        },
+        {
+            "field": "State",
+            "message": "The length of 'State' must be at least 2 characters. You entered 1 characters."
+        },
+        {
+            "field": "PostalCode",
+            "message": "Invalid Postal Code. Postal Code needs to be of 5 digits."
+        },
+        {
+            "field": "CompanyLogo",
+            "message": "This file format is not supported."
+        },
+        {
+            "field": "Timezone",
+            "message": "Invalid Time Zone. Kindly enter the following Time-Zones : \"Eastern Standard Time\", \"Central Standard Time\", \"Alaskan Standard Time\", \"Pacific Standard Time\", \"Hawaiian Standard Time\", \"Atlantic Standard Time\"."
+        }
+    ]
+}<br/>
+*****************************************************<br/>
+updateCompanyAccount----Completed<br/>
+*****************************************************<br/>
+Case 2:-updateCompanyAccountWithLessThanDefinedInput----Completed<br/>
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------<br/>
+Case 3:-updateCompanyAccountWithMoreThanDefinedInput----Started<br/>
+*****************************************************<br/>
+updateCompanyAccount----Started<br/>
+*****************************************************<br/>
+StatusCode:  400<br/>
+Passed: StatusCode is 400{
+    "statusCode": 400,
+    "message": "Validation failed.",
+    "errors": [
+        {
+            "field": "Phone",
+            "message": "Invalid Phone Number. Phone Number needs to be of 10 digits."
+        },
+        {
+            "field": "Email",
+            "message": "Invalid email address."
+        },
+        {
+            "field": "Ein",
+            "message": "EIN should be Numeric and the acceptable format is xx-xxxxxxx."
+        },
+        {
+            "field": "AddressLine1",
+            "message": "Enter at least 2 characters and at most 50 characters."
+        },
+        {
+            "field": "AddressLine2",
+            "message": "Enter at most 50 characters."
+        },
+        {
+            "field": "City",
+            "message": "Enter at least 2 characters and at most 30 characters."
+        },
+        {
+            "field": "State",
+            "message": "Please enter a valid State."
+        },
+        {
+            "field": "PostalCode",
+            "message": "Invalid Postal Code. Postal Code needs to be of 5 digits."
+        },
+        {
+            "field": "CompanyLogo",
+            "message": "This file format is not supported."
+        },
+        {
+            "field": "Timezone",
+            "message": "Invalid Time Zone. Kindly enter the following Time-Zones : \"Eastern Standard Time\", \"Central Standard Time\", \"Alaskan Standard Time\", \"Pacific Standard Time\", \"Hawaiian Standard Time\", \"Atlantic Standard Time\"."
+        }
+    ]
+}<br/>
+*****************************************************<br/>
+updateCompanyAccount----Completed<br/>
+*****************************************************<br/>
+Case 3:-updateCompanyAccountWithMoreThanDefinedInput----Completed<br/>
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------<br/>
+Case 4:-updateCompanyAccountWithSpaceAccountId----Started<br/>
+*****************************************************<br/>
+updateCompanyAccount----Started<br/>
+*****************************************************<br/>
+StatusCode:  400<br/>
+Passed: StatusCode is 400{
+    "errors": {
+        "accountId": [
+            "The value '' is invalid."
+        ]
+    },
+    "type": "https://tools.ietf.org/html/rfc7231#section-6.5.1",
+    "title": "One or more validation errors occurred.",
+    "status": 400,
+    "traceId": "00-9909bc59ee812922fb8748cd435fc5f7-391971071962d6bb-00"
+}<br/>
+*****************************************************<br/>
+updateCompanyAccount----Completed<br/>
+*****************************************************<br/>
+Case 4:-updateCompanyAccountWithSpaceAccountId----Completed<br/>
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------<br/>
+Case 5:-updateCompanyAccountWithSpaceAccountStatus----Started<br/>
+*****************************************************<br/>
+updateCompanyAccount----Started<br/>
+*****************************************************<br/>
+StatusCode:  400<br/>
+Passed: StatusCode is 400{
+    "errors": {
+        "accountId": [
+            "The value '' is invalid."
+        ],
+        "accountStatus": [
+            "The value '' is invalid."
+        ]
+    },
+    "type": "https://tools.ietf.org/html/rfc7231#section-6.5.1",
+    "title": "One or more validation errors occurred.",
+    "status": 400,
+    "traceId": "00-de4190d38f61ae1031cb3905c09ee7e1-1b9f6801ee356b48-00"
+}<br/>
+*****************************************************<br/>
+updateCompanyAccount----Completed<br/>
+*****************************************************<br/>
+Case 5:-updateCompanyAccountWithSpaceAccountStatus----Completed<br/>
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------<br/>
+Case 6:-updateCompanyAccountWithWrongAccountStatus----Started<br/>
+*****************************************************<br/>
+updateCompanyAccount----Started<br/>
+*****************************************************<br/>
+StatusCode:  400<br/>
+Passed: StatusCode is 400{
+    "errors": {
+        "accountId": [
+            "The value 'Demo@1213' is not valid for AccountId."
+        ],
+        "accountStatus": [
+            "The value '5' is invalid."
+        ]
+    },
+    "type": "https://tools.ietf.org/html/rfc7231#section-6.5.1",
+    "title": "One or more validation errors occurred.",
+    "status": 400,
+    "traceId": "00-9e97b41fcd0206385ebe9c6490900b52-b9153812cbc6ce81-00"
+}<br/>
+*****************************************************<br/>
+updateCompanyAccount----Completed<br/>
+*****************************************************<br/>
+Case 6:-updateCompanyAccountWithWrongAccountStatus----Completed<br/>
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------<br/>
+*****************************************************<br/>
+updateCompanyAccount_NegativeScenarios----Completed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Scenarios.updateCompanyAccountScenarios@131774fe</td></tr>
+<tr>
+<td title='Scenarios.createUserScenarios.createUserWithWrongRoleTypeString()'><b>createUserWithWrongRoleTypeString</b><br>Test class: Scenarios.createUserScenarios<br/>
+<a href="#Output-107444607" onClick='toggleBox("Output-107444607", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-107444607" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-107444607">
+createUserWithWrongRoleTypeString----Started<br/>
+*****************************************************<br/>
+createSingleUser----Started<br/>
+*****************************************************<br/>
+StatusCode:  400<br/>
+Passed: StatusCode is  400{
+    "errors": {
+        "role": [
+            "Unexpected character encountered while parsing value: s. Path 'role', line 1, position 94.",
+            "Unexpected character encountered while parsing value: a. Path 'role', line 1, position 94."
+        ]
+    },
+    "type": "https://tools.ietf.org/html/rfc7231#section-6.5.1",
+    "title": "One or more validation errors occurred.",
+    "status": 400,
+    "traceId": "00-99933abeb4750c8dcd5ed51be3b12083-fbe9112692d532bf-00"
+}<br/>
+*****************************************************<br/>
+createSingleUser----Completed<br/>
+*****************************************************<br/>
+createUserWithWrongRoleTypeString----Completed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Scenarios.createUserScenarios@3febb011</td></tr>
+<tr>
+<td title='Scenarios.createUserScenarios.createUserWithOutValidToken()'><b>createUserWithOutValidToken</b><br>Test class: Scenarios.createUserScenarios<br/>
+<a href="#Output-1114834984" onClick='toggleBox("Output-1114834984", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1114834984" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1114834984">
+createUserWithOutValidToken----Started<br/>
+*****************************************************<br/>
+createUserWithOutInvalidToken----Started<br/>
+*****************************************************<br/>
+StatusCode:  401<br/>
+Passed: StatusCode is 401<br/>
+*****************************************************<br/>
+createUserWithOutInvalidToken----Completed<br/>
+*****************************************************<br/>
+createUserWithOutValidToken----Completed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Scenarios.createUserScenarios@3febb011</td></tr>
+<tr>
+<td title='Scenarios.bankAccountSignatureScenarios.bankAccountSignatureWrongFileResolution()'><b>bankAccountSignatureWrongFileResolution</b><br>Test class: Scenarios.bankAccountSignatureScenarios<br/>
+<a href="#Output-261925632" onClick='toggleBox("Output-261925632", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-261925632" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-261925632">
+bankAccountSignatureWrongFileResolution----Started<br/>
+*****************************************************<br/>
+bankAccountSignature----Started<br/>
+*****************************************************<br/>
+StatusCode:  400<br/>
+Passed: StatusCode is  400{
+    "statusCode": 400,
+    "message": "Validation failed.",
+    "errors": [
+        {
+            "field": "Image",
+            "message": "Size of the Signature Image should be 240 x 43 pixels."
+        }
+    ]
+}<br/>
+*****************************************************<br/>
+bankAccountSignature----Completed<br/>
+*****************************************************<br/>
+bankAccountSignatureWrongFileResolution----Completed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Scenarios.bankAccountSignatureScenarios@49ec71f8</td></tr>
+<tr>
+<td title='Scenarios.bankAccountSignatureScenarios.whenMeasureResponseTime_thenOK()'><b>whenMeasureResponseTime_thenOK</b><br>Test class: Scenarios.bankAccountSignatureScenarios<br/>
+<a href="#Output-388489274" onClick='toggleBox("Output-388489274", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-388489274" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-388489274">
+whenMeasureResponseTime_thenOK bankAccountSignature----Started<br/>
+*****************************************************<br/>
+Time in Completion 265<br/>
+*****************************************************<br/>
+whenMeasureResponseTime_thenOK bankAccountSignature----Completed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Scenarios.bankAccountSignatureScenarios@49ec71f8</td></tr>
+<tr>
+<td title='Scenarios.getCompanyAccountScenarios.whenMeasureResponseTime_thenOK()'><b>whenMeasureResponseTime_thenOK</b><br>Test class: Scenarios.getCompanyAccountScenarios<br/>
+<a href="#Output-1454922150" onClick='toggleBox("Output-1454922150", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1454922150" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1454922150">
+whenMeasureResponseTime_thenOK  getCompanyAccount----Started<br/>
+*****************************************************<br/>
+Time in Completion 106<br/>
+*****************************************************<br/>
+whenMeasureResponseTime_thenOK  getCompanyAccount----Completed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Scenarios.getCompanyAccountScenarios@399f45b1</td></tr>
+<tr>
+<td title='Scenarios.createUserScenarios.whenMeasureResponseTime_thenOK()'><b>whenMeasureResponseTime_thenOK</b><br>Test class: Scenarios.createUserScenarios<br/>
+<a href="#Output-316671934" onClick='toggleBox("Output-316671934", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-316671934" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-316671934">
+whenMeasureResponseTime_thenOK createUser----Started<br/>
+*****************************************************<br/>
+Time in Completion 142<br/>
+*****************************************************<br/>
+whenMeasureResponseTime_thenOK createUser----Completed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Scenarios.createUserScenarios@3febb011</td></tr>
+<tr>
+<td title='Scenarios.createUserScenarios.createUserWithBlankData()'><b>createUserWithBlankData</b><br>Test class: Scenarios.createUserScenarios<br/>
+<a href="#Output-645919967" onClick='toggleBox("Output-645919967", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-645919967" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-645919967">
+createUserWithBlankData----Started<br/>
+*****************************************************<br/>
+createSingleUser----Started<br/>
+*****************************************************<br/>
+StatusCode:  400<br/>
+Passed: StatusCode is  400{
+    "statusCode": 400,
+    "message": "Validation failed.",
+    "errors": [
+        {
+            "field": "FullName",
+            "message": "This field is required."
+        },
+        {
+            "field": "FullName",
+            "message": "Please enter at least 2 characters."
+        },
+        {
+            "field": "Phone",
+            "message": "This field is required."
+        },
+        {
+            "field": "Phone",
+            "message": "Invalid Phone Number. Phone Number needs to be of 10 digits."
+        },
+        {
+            "field": "Status",
+            "message": "This field is required."
+        },
+        {
+            "field": "Status",
+            "message": "Accepts value either 1 or 2."
+        },
+        {
+            "field": "Role",
+            "message": "This field is required."
+        },
+        {
+            "field": "Role",
+            "message": "Accepts value 1."
+        },
+        {
+            "field": "Email",
+            "message": "This field is required."
+        },
+        {
+            "field": "Email",
+            "message": "Invalid email address."
+        }
+    ]
+}<br/>
+*****************************************************<br/>
+createSingleUser----Completed<br/>
+*****************************************************<br/>
+createUserWithBlankData----Completed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Scenarios.createUserScenarios@3febb011</td></tr>
+<tr>
+<td title='Scenarios.employerDataScenarios.getEmployerDataPositive()'><b>getEmployerDataPositive</b><br>Test class: Scenarios.employerDataScenarios<br/>
+<a href="#Output-1722102020" onClick='toggleBox("Output-1722102020", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1722102020" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1722102020">
+createEmployer----Started<br/>
+*****************************************************<br/>
+StatusCode:  200<br/>
+Passed: StatusCode is 200<br/>
+*****************************************************<br/>
+createEmployer----Completed<br/>
+GetEmployerDetailsForPage1----Started<br/>
+*****************************************************<br/>
+getEmployerDetails----Started<br/>
+*****************************************************<br/>
+StatusCode:  200<br/>
+Passed: StatusCode is 200<br/>
+*****************************************************<br/>
+createEmployer----Completed<br/>
+*****************************************************<br/>
+GetEmployerDetailsForPage1----Completed<br/>
+Null ID for page 1----Started<br/>
+*****************************************************<br/>
+getEmployerDetails----Started<br/>
+*****************************************************<br/>
+StatusCode:  200<br/>
+Passed: StatusCode is 200<br/>
+*****************************************************<br/>
+createEmployer----Completed<br/>
+*****************************************************<br/>
+Null ID for page 1----Completed<br/>
+Invalid ID for page 1----Started<br/>
+*****************************************************<br/>
+getEmployerDetails----Started<br/>
+*****************************************************<br/>
+StatusCode:  200<br/>
+Passed: StatusCode is 200<br/>
+*****************************************************<br/>
+createEmployer----Completed<br/>
+*****************************************************<br/>
+Invalid ID for page 1----Completed<br/>
+</div>
+</td>
+<td></td>
+<td>61</td>
+<td>Scenarios.employerDataScenarios@36902638</td></tr>
+<tr>
+<td title='Scenarios.bankAccountSignatureScenarios.bankAccountSignatureWrongFileFormatPdf()'><b>bankAccountSignatureWrongFileFormatPdf</b><br>Test class: Scenarios.bankAccountSignatureScenarios<br/>
+<a href="#Output-1996385500" onClick='toggleBox("Output-1996385500", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1996385500" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1996385500">
+bankAccountSignatureWrongFileFormatPdf----Started<br/>
+*****************************************************<br/>
+bankAccountSignature----Started<br/>
+*****************************************************<br/>
+StatusCode:  400<br/>
+Passed: StatusCode is  400{
+    "statusCode": 400,
+    "message": "Validation failed.",
+    "errors": [
+        {
+            "field": "Image",
+            "message": "This file format is not supported."
+        }
+    ]
+}<br/>
+*****************************************************<br/>
+bankAccountSignature----Completed<br/>
+*****************************************************<br/>
+bankAccountSignatureWrongFileFormatPdf----Completed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Scenarios.bankAccountSignatureScenarios@49ec71f8</td></tr>
+<tr>
+<td title='Scenarios.employeeLoginScenarios.employeeLogin()'><b>employeeLogin</b><br>Test class: Scenarios.employeeLoginScenarios<br/>
+<a href="#Output-1500020749" onClick='toggleBox("Output-1500020749", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1500020749" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1500020749">
+employeeLogin----Started<br/>
+*****************************************************<br/>
+validateEmployeeSingleData----Started<br/>
+*****************************************************<br/>
+StatusCode:  200<br/>
+Passed: StatusCode is  200{
+    "returnStatus": true,
+    "statusCode": 200,
+    "returnMessage": [
+        "You are successfully logged in."
+    ],
+    "errors": {
+        
+    },
+    "data": {
+        "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJpc2hhYmhAb25lYmNnLmNvbSIsIm5hbWVpZCI6ImE1ODg0NjcwLWI1Y2YtNDNkMS05ZmNhLWRjYjQ5ZDY0NjM4MiIsInVpZCI6IjYiLCJhdWQiOlsiT25lQmNnU2VydmljZXMiLCJPbmVCY2dTZXJ2aWNlcyJdLCJpc3MiOiJPbmVCY2dTZXJ2aWNlcyIsImV4cCI6MTY1NTc5NTIyMX0.7Wp49E022p3VD52P_HOOViH_wBI6LdC8rtKcydPQ8rM",
+        "isFirstTimeLogin": false
+    }
+}<br/>
+*****************************************************<br/>
+validateEmployeeSingleData----Completed<br/>
+*****************************************************<br/>
+employeeLogin----Completed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Scenarios.employeeLoginScenarios@223d2c72</td></tr>
+<tr>
+<td title='Scenarios.createUserScenarios.createUserWithExistingEmail()'><b>createUserWithExistingEmail</b><br>Test class: Scenarios.createUserScenarios<br/>
+<a href="#Output-2123686705" onClick='toggleBox("Output-2123686705", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2123686705" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2123686705">
+createUserWithExistingEmail----Started<br/>
+*****************************************************<br/>
+createSingleUser----Started<br/>
+*****************************************************<br/>
+StatusCode:  200<br/>
+Passed: StatusCode is  200{
+    "returnStatus": true,
+    "statusCode": 200,
+    "returnMessage": [
+        
+    ],
+    "errors": {
+        
+    },
+    "data": {
+        "isUserAdded": true,
+        "message": "User added successfully."
+    }
+}<br/>
+*****************************************************<br/>
+createSingleUser----Completed<br/>
+createSingleUser----Started<br/>
+*****************************************************<br/>
+StatusCode:  422<br/>
+Passed: StatusCode is  422{
+    "page": 0,
+    "pageSize": 0,
+    "total": 0,
+    "returnStatus": false,
+    "statusCode": 422,
+    "returnMessage": [
+        "User already exists with this Email."
+    ],
+    "errors": {
+        
+    }
+}<br/>
+*****************************************************<br/>
+createSingleUser----Completed<br/>
+*****************************************************<br/>
+createUserWithExistingEmail----Completed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Scenarios.createUserScenarios@3febb011</td></tr>
+<tr>
+<td title='Scenarios.createUserScenarios.createUserWithOutData()'><b>createUserWithOutData</b><br>Test class: Scenarios.createUserScenarios<br/>
+<a href="#Output-1003521077" onClick='toggleBox("Output-1003521077", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1003521077" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1003521077">
+createUserWithOutData----Started<br/>
+*****************************************************<br/>
+createSingleUser----Started<br/>
+*****************************************************<br/>
+StatusCode:  400<br/>
+Passed: StatusCode is  400{
+    "statusCode": 400,
+    "message": "Validation failed.",
+    "errors": [
+        {
+            "field": "FullName",
+            "message": "'Full Name' must not be empty."
+        },
+        {
+            "field": "FullName",
+            "message": "This field is required."
+        },
+        {
+            "field": "Phone",
+            "message": "'Phone' must not be empty."
+        },
+        {
+            "field": "Phone",
+            "message": "This field is required."
+        },
+        {
+            "field": "Status",
+            "message": "This field is required."
+        },
+        {
+            "field": "Status",
+            "message": "Accepts value either 1 or 2."
+        },
+        {
+            "field": "Role",
+            "message": "This field is required."
+        },
+        {
+            "field": "Role",
+            "message": "Accepts value 1."
+        },
+        {
+            "field": "Email",
+            "message": "This field is required."
+        }
+    ]
+}<br/>
+*****************************************************<br/>
+createSingleUser----Completed<br/>
+*****************************************************<br/>
+createUserWithOutData----Completed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Scenarios.createUserScenarios@3febb011</td></tr>
+<tr>
+<td title='Scenarios.employeeLoginScenarios.invalidCredentialwithWrongPassword()'><b>invalidCredentialwithWrongPassword</b><br>Test class: Scenarios.employeeLoginScenarios<br/>
+<a href="#Output-2032479363" onClick='toggleBox("Output-2032479363", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2032479363" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2032479363">
+invalidCredentialwithWrongPassword----Started<br/>
+*****************************************************<br/>
+validateEmployeeSingleData----Started<br/>
+*****************************************************<br/>
+StatusCode:  422<br/>
+Passed: StatusCode is  422{
+    "page": 0,
+    "pageSize": 0,
+    "total": 0,
+    "returnStatus": false,
+    "statusCode": 422,
+    "returnMessage": [
+        "Invalid login credentials."
+    ],
+    "errors": {
+        
+    }
+}<br/>
+*****************************************************<br/>
+validateEmployeeSingleData----Completed<br/>
+*****************************************************<br/>
+invalidCredentialwithWrongPassword----Completed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Scenarios.employeeLoginScenarios@223d2c72</td></tr>
+<tr>
+<td title='Scenarios.employeeLoginScenarios.invalidCredentialWithBlankPassword()'><b>invalidCredentialWithBlankPassword</b><br>Test class: Scenarios.employeeLoginScenarios<br/>
+<a href="#Output-736888459" onClick='toggleBox("Output-736888459", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-736888459" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-736888459">
+invalidCredentialWithBlankPassword----Started<br/>
+*****************************************************<br/>
+validateEmployeeSingleData----Started<br/>
+*****************************************************<br/>
+StatusCode:  400<br/>
+Passed: StatusCode is  400{
+    "statusCode": 400,
+    "message": "Validation failed.",
+    "errors": [
+        {
+            "field": "Password",
+            "message": "This field is required."
+        }
+    ]
+}<br/>
+*****************************************************<br/>
+validateEmployeeSingleData----Completed<br/>
+*****************************************************<br/>
+invalidCredentialWithBlankPassword----Completed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Scenarios.employeeLoginScenarios@223d2c72</td></tr>
+<tr>
+<td title='Scenarios.createUserScenarios.createUserWithWrongInput()'><b>createUserWithWrongInput</b><br>Test class: Scenarios.createUserScenarios<br/>
+<a href="#Output-1350011870" onClick='toggleBox("Output-1350011870", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1350011870" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1350011870">
+createUserWithWrongInput----Started<br/>
+*****************************************************<br/>
+createSingleUser----Started<br/>
+*****************************************************<br/>
+StatusCode:  400<br/>
+Passed: StatusCode is  400{
+    "statusCode": 400,
+    "message": "Validation failed.",
+    "errors": [
+        {
+            "field": "FullName",
+            "message": "Please enter at most 60 characters."
+        },
+        {
+            "field": "Phone",
+            "message": "Invalid Phone Number. Phone Number needs to be of 10 digits."
+        },
+        {
+            "field": "Status",
+            "message": "Accepts value either 1 or 2."
+        },
+        {
+            "field": "Role",
+            "message": "Accepts value 1."
+        },
+        {
+            "field": "Email",
+            "message": "Invalid email address."
+        }
+    ]
+}<br/>
+*****************************************************<br/>
+createSingleUser----Completed<br/>
+*****************************************************<br/>
+createUserWithWrongInput----Completed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Scenarios.createUserScenarios@3febb011</td></tr>
+<tr>
+<td title='Scenarios.employeeLoginScenarios.invalidCredentialwithWrongEmail()'><b>invalidCredentialwithWrongEmail</b><br>Test class: Scenarios.employeeLoginScenarios<br/>
+<a href="#Output-542475071" onClick='toggleBox("Output-542475071", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-542475071" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-542475071">
+invalidCredentialwithWrongEmail----Started<br/>
+*****************************************************<br/>
+validateEmployeeSingleData----Started<br/>
+*****************************************************<br/>
+StatusCode:  422<br/>
+Passed: StatusCode is  422{
+    "page": 0,
+    "pageSize": 0,
+    "total": 0,
+    "returnStatus": false,
+    "statusCode": 422,
+    "returnMessage": [
+        "Invalid login credentials."
+    ],
+    "errors": {
+        
+    }
+}<br/>
+*****************************************************<br/>
+validateEmployeeSingleData----Completed<br/>
+*****************************************************<br/>
+invalidCredentialwithWrongEmail----Completed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Scenarios.employeeLoginScenarios@223d2c72</td></tr>
+<tr>
+<td title='Scenarios.employerFilterScenarios.employerAutoCompleteFilterNegative()'><b>employerAutoCompleteFilterNegative</b><br>Test class: Scenarios.employerFilterScenarios<br/>
+<a href="#Output-1237856866" onClick='toggleBox("Output-1237856866", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1237856866" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1237856866">
+createEmployer----Started<br/>
+*****************************************************<br/>
+createEmployer----Started<br/>
+*****************************************************<br/>
+StatusCode:  200<br/>
+Passed: StatusCode is 200<br/>
+*****************************************************<br/>
+createEmployer----Completed<br/>
+*****************************************************<br/>
+createEmployer----Completed<br/>
+verifyingEmployerAutoCompleteFilterWithBlankData----Started<br/>
+*****************************************************<br/>
+verifyingEmployerAutoCompleteFilter----Started<br/>
+*****************************************************<br/>
+StatusCode:  400<br/>
+Passed: StatusCode is 400<br/>
+*****************************************************<br/>
+createEmployer----Completed<br/>
+*****************************************************<br/>
+verifyingEmployerAutoCompleteFilterWithBlankData----Completed<br/>
+verifyingEmployerAutoCompleteFilterWithSpaces----Started<br/>
+*****************************************************<br/>
+verifyingEmployerAutoCompleteFilter----Started<br/>
+*****************************************************<br/>
+StatusCode:  400<br/>
+Passed: StatusCode is 400<br/>
+*****************************************************<br/>
+createEmployer----Completed<br/>
+*****************************************************<br/>
+verifyingEmployerAutoCompleteFilterWithSpaces----Completed<br/>
+verifyingEmployerAutoCompleteFilterWithMinChar----Started<br/>
+*****************************************************<br/>
+verifyingEmployerAutoCompleteFilter----Started<br/>
+*****************************************************<br/>
+StatusCode:  400<br/>
+Passed: StatusCode is 400<br/>
+*****************************************************<br/>
+createEmployer----Completed<br/>
+*****************************************************<br/>
+verifyingEmployerAutoCompleteFilterWithMinChar----Completed<br/>
+verifyingEmployerAutoCompleteFilterWithInvalidData----Started<br/>
+*****************************************************<br/>
+verifyingEmployerAutoCompleteFilter----Started<br/>
+*****************************************************<br/>
+StatusCode:  200<br/>
+Passed: StatusCode is 200<br/>
+*****************************************************<br/>
+createEmployer----Completed<br/>
+*****************************************************<br/>
+verifyingEmployerAutoCompleteFilterWithInvalidData----Completed<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Scenarios.employerFilterScenarios@10e31a9a</td></tr>
+<tr>
+<td title='Scenarios.updateCompanyAccountScenarios.updateCompanyAccountPositiveScenarios()'><b>updateCompanyAccountPositiveScenarios</b><br>Test class: Scenarios.updateCompanyAccountScenarios<br/>
+<a href="#Output-546271589" onClick='toggleBox("Output-546271589", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-546271589" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-546271589">
+updateCompanyAccountPositiveScenarios----Started<br/>
+*****************************************************<br/>
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------<br/>
+updateCompanyAccountWithActive----Started<br/>
+*****************************************************<br/>
+updateCompanyAccount----Started<br/>
+*****************************************************<br/>
+StatusCode:  200<br/>
+Passed: StatusCode is 200{
+    "returnStatus": true,
+    "statusCode": 200,
+    "returnMessage": [
+        "Successfully Updated."
+    ],
+    "errors": {
+        
+    },
+    "data": null
+}<br/>
+*****************************************************<br/>
+updateCompanyAccount----Completed<br/>
+*****************************************************<br/>
+updateCompanyAccountWithActive----Completed<br/>
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------<br/>
+updateCompanyAccountWithInactive----Started<br/>
+*****************************************************<br/>
+updateCompanyAccount----Started<br/>
+*****************************************************<br/>
+StatusCode:  200<br/>
+Passed: StatusCode is 200{
+    "returnStatus": true,
+    "statusCode": 200,
+    "returnMessage": [
+        "Successfully Updated."
+    ],
+    "errors": {
+        
+    },
+    "data": null
+}<br/>
+*****************************************************<br/>
+updateCompanyAccount----Completed<br/>
+*****************************************************<br/>
+updateCompanyAccountWithInactive----Completed<br/>
+*****************************************************<br/>
+updateCompanyAccountPositiveScenarios----Completed<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>Scenarios.updateCompanyAccountScenarios@131774fe</td></tr>
+<tr>
+<td title='Scenarios.employeeLoginScenarios.invalidCredentialWithBlankEmail()'><b>invalidCredentialWithBlankEmail</b><br>Test class: Scenarios.employeeLoginScenarios<br/>
+<a href="#Output-540315736" onClick='toggleBox("Output-540315736", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-540315736" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-540315736">
+invalidCredentialWithBlankEmail----Started<br/>
+*****************************************************<br/>
+validateEmployeeSingleData----Started<br/>
+*****************************************************<br/>
+StatusCode:  400<br/>
+Passed: StatusCode is  400{
+    "statusCode": 400,
+    "message": "Validation failed.",
+    "errors": [
+        {
+            "field": "Email",
+            "message": "This field is required."
+        }
+    ]
+}<br/>
+*****************************************************<br/>
+validateEmployeeSingleData----Completed<br/>
+*****************************************************<br/>
+invalidCredentialWithBlankEmail----Completed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Scenarios.employeeLoginScenarios@223d2c72</td></tr>
+<tr>
+<td title='Scenarios.employerFilterScenarios.employerAutoCompleteFilterPositive()'><b>employerAutoCompleteFilterPositive</b><br>Test class: Scenarios.employerFilterScenarios<br/>
+<a href="#Output-907089215" onClick='toggleBox("Output-907089215", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-907089215" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-907089215">
+createEmployer----Started<br/>
+*****************************************************<br/>
+StatusCode:  200<br/>
+Passed: StatusCode is 200<br/>
+*****************************************************<br/>
+createEmployer----Completed<br/>
+verifyingEmployerAutoCompleteFilter----Started<br/>
+*****************************************************<br/>
+StatusCode:  200<br/>
+Passed: StatusCode is 200<br/>
+*****************************************************<br/>
+createEmployer----Completed<br/>
+verifyingEmployerAutoCompleteFilter----Started<br/>
+*****************************************************<br/>
+StatusCode:  200<br/>
+Passed: StatusCode is 200<br/>
+*****************************************************<br/>
+createEmployer----Completed<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>Scenarios.employerFilterScenarios@10e31a9a</td></tr>
+<tr>
+<td title='Scenarios.getCompanyAccountScenarios.companyAccountDetailsWithoutAccessToken()'><b>companyAccountDetailsWithoutAccessToken</b><br>Test class: Scenarios.getCompanyAccountScenarios<br/>
+<a href="#Output-1339052072" onClick='toggleBox("Output-1339052072", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1339052072" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1339052072">
+companyAccountDetailsWithoutAccessToken----Started<br/>
+*****************************************************<br/>
+companyAccountDetailsWithoutAccessToken----Started<br/>
+*****************************************************<br/>
+StatusCode:  401<br/>
+Passed: StatusCode is 401<br/>
+*****************************************************<br/>
+companyAccountDetailsWithoutAccessToken----Completed<br/>
+*****************************************************<br/>
+companyAccountDetailsWithoutAccessToken----Completed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Scenarios.getCompanyAccountScenarios@399f45b1</td></tr>
+<tr>
+<td title='Scenarios.createUserScenarios.createUserWithSpecialCharName()'><b>createUserWithSpecialCharName</b><br>Test class: Scenarios.createUserScenarios<br/>
+<a href="#Output-1252261018" onClick='toggleBox("Output-1252261018", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1252261018" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1252261018">
+createUserWithSpecialCharName----Started<br/>
+*****************************************************<br/>
+createSingleUser----Started<br/>
+*****************************************************<br/>
+StatusCode:  200<br/>
+Passed: StatusCode is  200{
+    "returnStatus": true,
+    "statusCode": 200,
+    "returnMessage": [
+        
+    ],
+    "errors": {
+        
+    },
+    "data": {
+        "isUserAdded": true,
+        "message": "User added successfully."
+    }
+}<br/>
+*****************************************************<br/>
+createSingleUser----Completed<br/>
+*****************************************************<br/>
+createUserWithSpecialCharName----Completed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Scenarios.createUserScenarios@3febb011</td></tr>
+<tr>
+<td title='Scenarios.createUserScenarios.createUser()'><b>createUser</b><br>Test class: Scenarios.createUserScenarios<br/>
+<a href="#Output-54254849" onClick='toggleBox("Output-54254849", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-54254849" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-54254849">
+createUser----Started<br/>
+*****************************************************<br/>
+createSingleUser----Started<br/>
+*****************************************************<br/>
+StatusCode:  200<br/>
+Passed: StatusCode is  200{
+    "returnStatus": true,
+    "statusCode": 200,
+    "returnMessage": [
+        
+    ],
+    "errors": {
+        
+    },
+    "data": {
+        "isUserAdded": true,
+        "message": "User added successfully."
+    }
+}<br/>
+*****************************************************<br/>
+createSingleUser----Completed<br/>
+*****************************************************<br/>
+createUser----Completed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Scenarios.createUserScenarios@3febb011</td></tr>
+<tr>
+<td title='Scenarios.createUserScenarios.createUserWithlessInput()'><b>createUserWithlessInput</b><br>Test class: Scenarios.createUserScenarios<br/>
+<a href="#Output-176320504" onClick='toggleBox("Output-176320504", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-176320504" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-176320504">
+createUserWithlessInput----Started<br/>
+*****************************************************<br/>
+createSingleUser----Started<br/>
+*****************************************************<br/>
+StatusCode:  400<br/>
+Passed: StatusCode is  400{
+    "statusCode": 400,
+    "message": "Validation failed.",
+    "errors": [
+        {
+            "field": "FullName",
+            "message": "Please enter at least 2 characters."
+        },
+        {
+            "field": "Phone",
+            "message": "Invalid Phone Number. Phone Number needs to be of 10 digits."
+        },
+        {
+            "field": "Email",
+            "message": "Invalid email address."
+        }
+    ]
+}<br/>
+*****************************************************<br/>
+createSingleUser----Completed<br/>
+*****************************************************<br/>
+createUserWithlessInput----Completed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Scenarios.createUserScenarios@3febb011</td></tr>
+<tr>
+<td title='Scenarios.createUserScenarios.createUserWithWrongPhoneFormat()'><b>createUserWithWrongPhoneFormat</b><br>Test class: Scenarios.createUserScenarios<br/>
+<a href="#Output-944009919" onClick='toggleBox("Output-944009919", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-944009919" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-944009919">
+createUserWithWrongPhoneFormat----Started<br/>
+*****************************************************<br/>
+createMultipleUser----Started<br/>
+*****************************************************<br/>
+StatusCode:  400<br/>
+Passed: StatusCode is  400{
+    "statusCode": 400,
+    "message": "Validation failed.",
+    "errors": [
+        {
+            "field": "Phone",
+            "message": "Invalid Phone Number. Phone Number needs to be of 10 digits."
+        }
+    ]
+}<br/>
+*****************************************************<br/>
+createMultipleUser----Completed<br/>
+*****************************************************<br/>
+createUserWithWrongPhoneFormat----Completed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Scenarios.createUserScenarios@3febb011</td></tr>
+<tr>
+<td title='Scenarios.fetchuserDetailsScenarios.whenMeasureResponseTime_thenOK()'><b>whenMeasureResponseTime_thenOK</b><br>Test class: Scenarios.fetchuserDetailsScenarios<br/>
+<a href="#Output-1527317172" onClick='toggleBox("Output-1527317172", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1527317172" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1527317172">
+whenMeasureResponseTime_thenOK fetchuserDetails----Started<br/>
+*****************************************************<br/>
+Time in Completion 78<br/>
+*****************************************************<br/>
+whenMeasureResponseTime_thenOK fetchuserDetails----Completed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Scenarios.fetchuserDetailsScenarios@436813f3</td></tr>
+</table><p>
+</body>
+</html>

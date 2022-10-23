@@ -1,0 +1,1291 @@
+<h2>Reporter output</h2><table><tr><td>getCompanyAccountDetails----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>companyAccountDetails----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  200</td></tr>
+<tr><td>Passed: StatusCode is 200{
+    "returnStatus": true,
+    "statusCode": 200,
+    "returnMessage": [
+        
+    ],
+    "errors": {
+        
+    },
+    "data": {
+        "accountId": 143,
+        "accountType": 3,
+        "accountStatus": 1,
+        "imageUrl": "https://payrollwhitelabelapi.blob.core.windows.net/uploads/images/signature_17a7fba8_2265_4f0e_a23f_83f48b4f7b33.jpg",
+        "fullName": "Onebcg",
+        "addressLine1": "132, woodrow",
+        "addressLine2": "",
+        "city": "New York",
+        "state": "NY",
+        "postalCode": "12345",
+        "countryCode": "91",
+        "phone": "7894561230",
+        "email": "qa.test63m@onebcg.com",
+        "taxIdType": 2,
+        "shortTaxIdentifier": "2121",
+        "timezone": "EASTERN STANDARD TIME"
+    }
+}</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>companyAccountDetails----Completed</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>getCompanyAccountDetails----Completed</td></tr>
+<tr><td>companyAccountDetailsWithoutAccessToken----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>companyAccountDetailsWithoutAccessToken----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  401</td></tr>
+<tr><td>Passed: StatusCode is 401</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>companyAccountDetailsWithoutAccessToken----Completed</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>companyAccountDetailsWithoutAccessToken----Completed</td></tr>
+<tr><td>whenMeasureResponseTime_thenOK  getCompanyAccount----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>Time in Completion 106</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>whenMeasureResponseTime_thenOK  getCompanyAccount----Completed</td></tr>
+<tr><td>updateEmployeeSignature----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>bankAccountSignature----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  200</td></tr>
+<tr><td>Passed: StatusCode is  200{
+    "returnStatus": true,
+    "statusCode": 200,
+    "returnMessage": [
+        "Employer Bank Account Signature Image successfully updated."
+    ],
+    "errors": {
+        
+    },
+    "data": {
+        "imageUrl": "https://payrollwhitelabelapi.blob.core.windows.net/uploads/signatureimages/signature_580039d5_03bb_462c_8633_e9b6c6585716.jpg?sv=2019-07-07&sr=b&sig=NEteI3dUq9gwcf4Yra4tpPAZM%2BbDD%2BU%2Fj1QiQy6TDcc%3D&se=2022-06-21T08%3A44%3A44Z&sp=r"
+    }
+}</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>bankAccountSignature----Completed</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>updateEmployeeSignature----Completed</td></tr>
+<tr><td>bankAccountSignatureWrongFileFormatCsv----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>bankAccountSignature----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  400</td></tr>
+<tr><td>Passed: StatusCode is  400{
+    "statusCode": 400,
+    "message": "Validation failed.",
+    "errors": [
+        {
+            "field": "Image",
+            "message": "This file format is not supported."
+        }
+    ]
+}</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>bankAccountSignature----Completed</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>bankAccountSignatureWrongFileFormatCsv----Completed</td></tr>
+<tr><td>bankAccountSignatureWrongFileFormatPdf----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>bankAccountSignature----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  400</td></tr>
+<tr><td>Passed: StatusCode is  400{
+    "statusCode": 400,
+    "message": "Validation failed.",
+    "errors": [
+        {
+            "field": "Image",
+            "message": "This file format is not supported."
+        }
+    ]
+}</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>bankAccountSignature----Completed</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>bankAccountSignatureWrongFileFormatPdf----Completed</td></tr>
+<tr><td>bankAccountSignatureWrongFileSize----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>bankAccountSignature----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  400</td></tr>
+<tr><td>Passed: StatusCode is  400{
+    "statusCode": 400,
+    "message": "Validation failed.",
+    "errors": [
+        {
+            "field": "Image",
+            "message": "Size of the Signature Image should be 240 x 43 pixels."
+        }
+    ]
+}</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>bankAccountSignature----Completed</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>bankAccountSignatureWrongFileSize----Completed</td></tr>
+<tr><td>bankAccountSignatureWrongFileResolution----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>bankAccountSignature----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  400</td></tr>
+<tr><td>Passed: StatusCode is  400{
+    "statusCode": 400,
+    "message": "Validation failed.",
+    "errors": [
+        {
+            "field": "Image",
+            "message": "Size of the Signature Image should be 240 x 43 pixels."
+        }
+    ]
+}</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>bankAccountSignature----Completed</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>bankAccountSignatureWrongFileResolution----Completed</td></tr>
+<tr><td>whenMeasureResponseTime_thenOK bankAccountSignature----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>Time in Completion 265</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>whenMeasureResponseTime_thenOK bankAccountSignature----Completed</td></tr>
+<tr><td>whenMeasureResponseTime_thenOK for User Details----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>Time in Completion 109</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>whenMeasureResponseTime_thenOK for User Details----Completed</td></tr>
+<tr><td>createEmployer----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  200</td></tr>
+<tr><td>Passed: StatusCode is 200</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createEmployer----Completed</td></tr>
+<tr><td>GetEmployerDetailsForPage1----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>getEmployerDetails----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  200</td></tr>
+<tr><td>Passed: StatusCode is 200</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createEmployer----Completed</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>GetEmployerDetailsForPage1----Completed</td></tr>
+<tr><td>Null ID for page 1----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>getEmployerDetails----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  200</td></tr>
+<tr><td>Passed: StatusCode is 200</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createEmployer----Completed</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>Null ID for page 1----Completed</td></tr>
+<tr><td>Invalid ID for page 1----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>getEmployerDetails----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  200</td></tr>
+<tr><td>Passed: StatusCode is 200</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createEmployer----Completed</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>Invalid ID for page 1----Completed</td></tr>
+<tr><td>creatingEmployer----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createEmployer----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  200</td></tr>
+<tr><td>Passed: StatusCode is 200</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createEmployer----Completed</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>creatingEmployer----Completed</td></tr>
+<tr><td>creatingEmployer----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createEmployer----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  200</td></tr>
+<tr><td>Passed: StatusCode is 200</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createEmployer----Completed</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>creatingEmployer----Completed</td></tr>
+<tr><td>creatingEmployerWithBlankData----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createEmployer----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  400</td></tr>
+<tr><td>Passed: StatusCode is 400</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createEmployer----Completed</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>creatingEmployerWithBlankData----Completed</td></tr>
+<tr><td>creatingEmployerWithMinimumChar----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createEmployer----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  400</td></tr>
+<tr><td>Passed: StatusCode is 400</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createEmployer----Completed</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>creatingEmployerWithMinimumChar----Completed</td></tr>
+<tr><td>creatingEmployerWithMaximumChar----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createEmployer----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  400</td></tr>
+<tr><td>Passed: StatusCode is 400</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createEmployer----Completed</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>creatingEmployerWithMaximumChar----Completed</td></tr>
+<tr><td>creatingEmployerWithWrongEmail----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createEmployer----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  400</td></tr>
+<tr><td>Passed: StatusCode is 400</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createEmployer----Completed</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>creatingEmployerWithWrongEmail----Completed</td></tr>
+<tr><td>creatingEmployerWithInvalidSSN----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createEmployer----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  400</td></tr>
+<tr><td>Passed: StatusCode is 400</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createEmployer----Completed</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>creatingEmployerWithInvalidSSN----Completed</td></tr>
+<tr><td>creatingEmployerWithInvalidEIN----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createEmployer----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  400</td></tr>
+<tr><td>Passed: StatusCode is 400</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createEmployer----Completed</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>creatingEmployerWithInvalidEIN----Completed</td></tr>
+<tr><td>creatingEmployerWithduplicateSSN----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createEmployer----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  400</td></tr>
+<tr><td>Passed: StatusCode is 400</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createEmployer----Completed</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>creatingEmployerWithduplicateSSN----Completed</td></tr>
+<tr><td>creatingEmployerWithduplicateEIN----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createEmployer----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  400</td></tr>
+<tr><td>Passed: StatusCode is 400</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createEmployer----Completed</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>creatingEmployerWithduplicateEIN----Completed</td></tr>
+<tr><td>creatingEmployerWithInvalidCountryCode----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createEmployer----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  400</td></tr>
+<tr><td>Passed: StatusCode is 400</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createEmployer----Completed</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>creatingEmployerWithInvalidCountryCode----Completed</td></tr>
+<tr><td>creatingEmployerWithInvalidBankAccountRTN----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createEmployer----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  400</td></tr>
+<tr><td>Passed: StatusCode is 400</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createEmployer----Completed</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>creatingEmployerWithInvalidBankAccountRTN----Completed</td></tr>
+<tr><td>CreateEmployer----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createEmployer----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  200</td></tr>
+<tr><td>Passed: StatusCode is 200</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createEmployer----Completed</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>CreateEmployer----Completed</td></tr>
+<tr><td>Invalid ID for page 0----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>getEmployerDetails----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  400</td></tr>
+<tr><td>Passed: StatusCode is 400</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createEmployer----Completed</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>Invalid ID for page 0----Completed</td></tr>
+<tr><td>All fields are blank----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>getEmployerDetails----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  400</td></tr>
+<tr><td>Passed: StatusCode is 400</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createEmployer----Completed</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>All fields are flank----Completed</td></tr>
+<tr><td>whenMeasureResponseTime_thenOK employerData----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>Time in Completion 2159</td></tr>
+<tr><td>employeeLogin----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>validateEmployeeSingleData----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  200</td></tr>
+<tr><td>Passed: StatusCode is  200{
+    "returnStatus": true,
+    "statusCode": 200,
+    "returnMessage": [
+        "You are successfully logged in."
+    ],
+    "errors": {
+        
+    },
+    "data": {
+        "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJpc2hhYmhAb25lYmNnLmNvbSIsIm5hbWVpZCI6ImE1ODg0NjcwLWI1Y2YtNDNkMS05ZmNhLWRjYjQ5ZDY0NjM4MiIsInVpZCI6IjYiLCJhdWQiOlsiT25lQmNnU2VydmljZXMiLCJPbmVCY2dTZXJ2aWNlcyJdLCJpc3MiOiJPbmVCY2dTZXJ2aWNlcyIsImV4cCI6MTY1NTc5NTIyMX0.7Wp49E022p3VD52P_HOOViH_wBI6LdC8rtKcydPQ8rM",
+        "isFirstTimeLogin": false
+    }
+}</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>validateEmployeeSingleData----Completed</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>employeeLogin----Completed</td></tr>
+<tr><td>invalidCredentialWithBlankEmail----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>validateEmployeeSingleData----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  400</td></tr>
+<tr><td>Passed: StatusCode is  400{
+    "statusCode": 400,
+    "message": "Validation failed.",
+    "errors": [
+        {
+            "field": "Email",
+            "message": "This field is required."
+        }
+    ]
+}</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>validateEmployeeSingleData----Completed</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>invalidCredentialWithBlankEmail----Completed</td></tr>
+<tr><td>invalidCredentialWithBlankPassword----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>validateEmployeeSingleData----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  400</td></tr>
+<tr><td>Passed: StatusCode is  400{
+    "statusCode": 400,
+    "message": "Validation failed.",
+    "errors": [
+        {
+            "field": "Password",
+            "message": "This field is required."
+        }
+    ]
+}</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>validateEmployeeSingleData----Completed</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>invalidCredentialWithBlankPassword----Completed</td></tr>
+<tr><td>invalidCredentialwithWrongEmail----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>validateEmployeeSingleData----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  422</td></tr>
+<tr><td>Passed: StatusCode is  422{
+    "page": 0,
+    "pageSize": 0,
+    "total": 0,
+    "returnStatus": false,
+    "statusCode": 422,
+    "returnMessage": [
+        "Invalid login credentials."
+    ],
+    "errors": {
+        
+    }
+}</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>validateEmployeeSingleData----Completed</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>invalidCredentialwithWrongEmail----Completed</td></tr>
+<tr><td>invalidCredentialwithWrongPassword----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>validateEmployeeSingleData----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  422</td></tr>
+<tr><td>Passed: StatusCode is  422{
+    "page": 0,
+    "pageSize": 0,
+    "total": 0,
+    "returnStatus": false,
+    "statusCode": 422,
+    "returnMessage": [
+        "Invalid login credentials."
+    ],
+    "errors": {
+        
+    }
+}</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>validateEmployeeSingleData----Completed</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>invalidCredentialwithWrongPassword----Completed</td></tr>
+<tr><td>whenMeasureResponseTime_thenOK employeeLogin----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>Time in Completion 95</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>whenMeasureResponseTime_thenOK employeeLogin----Completed</td></tr>
+<tr><td>whenMeasureResponseTime_thenOK getUserName----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createSingleUser----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  200</td></tr>
+<tr><td>Passed: StatusCode is  200{
+    "returnStatus": true,
+    "statusCode": 200,
+    "returnMessage": [
+        
+    ],
+    "errors": {
+        
+    },
+    "data": {
+        "isUserAdded": true,
+        "message": "User added successfully."
+    }
+}</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createSingleUser----Completed</td></tr>
+<tr><td>Time in Completion 101</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>whenMeasureResponseTime_thenOK getUserName----Completed</td></tr>
+<tr><td>whenMeasureResponseTime_thenOK fetchuserDetails----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>Time in Completion 78</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>whenMeasureResponseTime_thenOK fetchuserDetails----Completed</td></tr>
+<tr><td>createMultipleUser----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createMultipleUser----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  200</td></tr>
+<tr><td>Passed: StatusCode is  200{
+    "returnStatus": true,
+    "statusCode": 200,
+    "returnMessage": [
+        
+    ],
+    "errors": {
+        
+    },
+    "data": {
+        "isUserAdded": true,
+        "message": "User added successfully."
+    }
+}</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createMultipleUser----Completed</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createMultipleUser----Completed</td></tr>
+<tr><td>createUser----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createSingleUser----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  200</td></tr>
+<tr><td>Passed: StatusCode is  200{
+    "returnStatus": true,
+    "statusCode": 200,
+    "returnMessage": [
+        
+    ],
+    "errors": {
+        
+    },
+    "data": {
+        "isUserAdded": true,
+        "message": "User added successfully."
+    }
+}</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createSingleUser----Completed</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createUser----Completed</td></tr>
+<tr><td>createUserWithBlankData----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createSingleUser----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  400</td></tr>
+<tr><td>Passed: StatusCode is  400{
+    "statusCode": 400,
+    "message": "Validation failed.",
+    "errors": [
+        {
+            "field": "FullName",
+            "message": "This field is required."
+        },
+        {
+            "field": "FullName",
+            "message": "Please enter at least 2 characters."
+        },
+        {
+            "field": "Phone",
+            "message": "This field is required."
+        },
+        {
+            "field": "Phone",
+            "message": "Invalid Phone Number. Phone Number needs to be of 10 digits."
+        },
+        {
+            "field": "Status",
+            "message": "This field is required."
+        },
+        {
+            "field": "Status",
+            "message": "Accepts value either 1 or 2."
+        },
+        {
+            "field": "Role",
+            "message": "This field is required."
+        },
+        {
+            "field": "Role",
+            "message": "Accepts value 1."
+        },
+        {
+            "field": "Email",
+            "message": "This field is required."
+        },
+        {
+            "field": "Email",
+            "message": "Invalid email address."
+        }
+    ]
+}</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createSingleUser----Completed</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createUserWithBlankData----Completed</td></tr>
+<tr><td>createUserWithBlankRoleAndStatusValue----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createSingleUser----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  400</td></tr>
+<tr><td>Passed: StatusCode is  400{
+    "errors": {
+        "role": [
+            "Unexpected character encountered while parsing value: ,. Path 'role', line 1, position 93."
+        ],
+        "status": [
+            "Unexpected character encountered while parsing value: }. Path 'status', line 1, position 105.",
+            "Unexpected end when deserializing object. Path 'status', line 1, position 105."
+        ]
+    },
+    "type": "https://tools.ietf.org/html/rfc7231#section-6.5.1",
+    "title": "One or more validation errors occurred.",
+    "status": 400,
+    "traceId": "00-19f6a7a1aee1a6c6bdcb9cf2bb0cc34c-5da6d6c0dd762b66-00"
+}</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createSingleUser----Completed</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createUserWithBlankRoleAndStatusValue----Completed</td></tr>
+<tr><td>createUserWithExistingEmail----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createSingleUser----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  200</td></tr>
+<tr><td>Passed: StatusCode is  200{
+    "returnStatus": true,
+    "statusCode": 200,
+    "returnMessage": [
+        
+    ],
+    "errors": {
+        
+    },
+    "data": {
+        "isUserAdded": true,
+        "message": "User added successfully."
+    }
+}</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createSingleUser----Completed</td></tr>
+<tr><td>createSingleUser----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  422</td></tr>
+<tr><td>Passed: StatusCode is  422{
+    "page": 0,
+    "pageSize": 0,
+    "total": 0,
+    "returnStatus": false,
+    "statusCode": 422,
+    "returnMessage": [
+        "User already exists with this Email."
+    ],
+    "errors": {
+        
+    }
+}</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createSingleUser----Completed</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createUserWithExistingEmail----Completed</td></tr>
+<tr><td>createUserWithOutData----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createSingleUser----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  400</td></tr>
+<tr><td>Passed: StatusCode is  400{
+    "statusCode": 400,
+    "message": "Validation failed.",
+    "errors": [
+        {
+            "field": "FullName",
+            "message": "'Full Name' must not be empty."
+        },
+        {
+            "field": "FullName",
+            "message": "This field is required."
+        },
+        {
+            "field": "Phone",
+            "message": "'Phone' must not be empty."
+        },
+        {
+            "field": "Phone",
+            "message": "This field is required."
+        },
+        {
+            "field": "Status",
+            "message": "This field is required."
+        },
+        {
+            "field": "Status",
+            "message": "Accepts value either 1 or 2."
+        },
+        {
+            "field": "Role",
+            "message": "This field is required."
+        },
+        {
+            "field": "Role",
+            "message": "Accepts value 1."
+        },
+        {
+            "field": "Email",
+            "message": "This field is required."
+        }
+    ]
+}</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createSingleUser----Completed</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createUserWithOutData----Completed</td></tr>
+<tr><td>createUserWithOutValidToken----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createUserWithOutInvalidToken----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  401</td></tr>
+<tr><td>Passed: StatusCode is 401</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createUserWithOutInvalidToken----Completed</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createUserWithOutValidToken----Completed</td></tr>
+<tr><td>createUserWithSpaceEmail----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createSingleUser----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  400</td></tr>
+<tr><td>Passed: StatusCode is  400{
+    "statusCode": 400,
+    "message": "Validation failed.",
+    "errors": [
+        {
+            "field": "Email",
+            "message": "Invalid email address."
+        }
+    ]
+}</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createSingleUser----Completed</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createUserWithSpaceEmail----Completed</td></tr>
+<tr><td>createUserWithSpecialCharName----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createSingleUser----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  200</td></tr>
+<tr><td>Passed: StatusCode is  200{
+    "returnStatus": true,
+    "statusCode": 200,
+    "returnMessage": [
+        
+    ],
+    "errors": {
+        
+    },
+    "data": {
+        "isUserAdded": true,
+        "message": "User added successfully."
+    }
+}</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createSingleUser----Completed</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createUserWithSpecialCharName----Completed</td></tr>
+<tr><td>createUserWithWrongInput----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createSingleUser----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  400</td></tr>
+<tr><td>Passed: StatusCode is  400{
+    "statusCode": 400,
+    "message": "Validation failed.",
+    "errors": [
+        {
+            "field": "FullName",
+            "message": "Please enter at most 60 characters."
+        },
+        {
+            "field": "Phone",
+            "message": "Invalid Phone Number. Phone Number needs to be of 10 digits."
+        },
+        {
+            "field": "Status",
+            "message": "Accepts value either 1 or 2."
+        },
+        {
+            "field": "Role",
+            "message": "Accepts value 1."
+        },
+        {
+            "field": "Email",
+            "message": "Invalid email address."
+        }
+    ]
+}</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createSingleUser----Completed</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createUserWithWrongInput----Completed</td></tr>
+<tr><td>createUserWithWrongPhoneFormat----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createMultipleUser----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  400</td></tr>
+<tr><td>Passed: StatusCode is  400{
+    "statusCode": 400,
+    "message": "Validation failed.",
+    "errors": [
+        {
+            "field": "Phone",
+            "message": "Invalid Phone Number. Phone Number needs to be of 10 digits."
+        }
+    ]
+}</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createMultipleUser----Completed</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createUserWithWrongPhoneFormat----Completed</td></tr>
+<tr><td>createUserWithWrongRoleTypeString----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createSingleUser----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  400</td></tr>
+<tr><td>Passed: StatusCode is  400{
+    "errors": {
+        "role": [
+            "Unexpected character encountered while parsing value: s. Path 'role', line 1, position 94.",
+            "Unexpected character encountered while parsing value: a. Path 'role', line 1, position 94."
+        ]
+    },
+    "type": "https://tools.ietf.org/html/rfc7231#section-6.5.1",
+    "title": "One or more validation errors occurred.",
+    "status": 400,
+    "traceId": "00-99933abeb4750c8dcd5ed51be3b12083-fbe9112692d532bf-00"
+}</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createSingleUser----Completed</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createUserWithWrongRoleTypeString----Completed</td></tr>
+<tr><td>createUserWithWrongStatusTypeString----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createSingleUser----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  400</td></tr>
+<tr><td>Passed: StatusCode is  400{
+    "errors": {
+        "status": [
+            "Unexpected character encountered while parsing value: s. Path 'status', line 1, position 107.",
+            "Unexpected character encountered while parsing value: a. Path 'status', line 1, position 107."
+        ]
+    },
+    "type": "https://tools.ietf.org/html/rfc7231#section-6.5.1",
+    "title": "One or more validation errors occurred.",
+    "status": 400,
+    "traceId": "00-6a1cfea76a20f712c99054b66bed9324-9e195efe906896e3-00"
+}</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createSingleUser----Completed</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createUserWithWrongStatusTypeString----Completed</td></tr>
+<tr><td>createUserWithlessInput----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createSingleUser----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  400</td></tr>
+<tr><td>Passed: StatusCode is  400{
+    "statusCode": 400,
+    "message": "Validation failed.",
+    "errors": [
+        {
+            "field": "FullName",
+            "message": "Please enter at least 2 characters."
+        },
+        {
+            "field": "Phone",
+            "message": "Invalid Phone Number. Phone Number needs to be of 10 digits."
+        },
+        {
+            "field": "Email",
+            "message": "Invalid email address."
+        }
+    ]
+}</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createSingleUser----Completed</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createUserWithlessInput----Completed</td></tr>
+<tr><td>whenMeasureResponseTime_thenOK createUser----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>Time in Completion 142</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>whenMeasureResponseTime_thenOK createUser----Completed</td></tr>
+<tr><td>createEmployer----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  200</td></tr>
+<tr><td>Passed: StatusCode is 200</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createEmployer----Completed</td></tr>
+<tr><td>verifyingEmployerAutoCompleteFilter----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  200</td></tr>
+<tr><td>Passed: StatusCode is 200</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createEmployer----Completed</td></tr>
+<tr><td>verifyingEmployerAutoCompleteFilter----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  200</td></tr>
+<tr><td>Passed: StatusCode is 200</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createEmployer----Completed</td></tr>
+<tr><td>createEmployer----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createEmployer----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  200</td></tr>
+<tr><td>Passed: StatusCode is 200</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createEmployer----Completed</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createEmployer----Completed</td></tr>
+<tr><td>verifyingEmployerAutoCompleteFilterWithBlankData----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>verifyingEmployerAutoCompleteFilter----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  400</td></tr>
+<tr><td>Passed: StatusCode is 400</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createEmployer----Completed</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>verifyingEmployerAutoCompleteFilterWithBlankData----Completed</td></tr>
+<tr><td>verifyingEmployerAutoCompleteFilterWithSpaces----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>verifyingEmployerAutoCompleteFilter----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  400</td></tr>
+<tr><td>Passed: StatusCode is 400</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createEmployer----Completed</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>verifyingEmployerAutoCompleteFilterWithSpaces----Completed</td></tr>
+<tr><td>verifyingEmployerAutoCompleteFilterWithMinChar----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>verifyingEmployerAutoCompleteFilter----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  400</td></tr>
+<tr><td>Passed: StatusCode is 400</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createEmployer----Completed</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>verifyingEmployerAutoCompleteFilterWithMinChar----Completed</td></tr>
+<tr><td>verifyingEmployerAutoCompleteFilterWithInvalidData----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>verifyingEmployerAutoCompleteFilter----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  200</td></tr>
+<tr><td>Passed: StatusCode is 200</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createEmployer----Completed</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>verifyingEmployerAutoCompleteFilterWithInvalidData----Completed</td></tr>
+<tr><td>whenMeasureResponseTime_thenOK employerFilter----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createEmployer----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  200</td></tr>
+<tr><td>Passed: StatusCode is 200</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createEmployer----Completed</td></tr>
+<tr><td>Time in Completion 81</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>whenMeasureResponseTime_thenOK employerFilter----Completed</td></tr>
+<tr><td>updateCompanyAccountPositiveScenarios----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------</td></tr>
+<tr><td>updateCompanyAccountWithActive----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>updateCompanyAccount----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  200</td></tr>
+<tr><td>Passed: StatusCode is 200{
+    "returnStatus": true,
+    "statusCode": 200,
+    "returnMessage": [
+        "Successfully Updated."
+    ],
+    "errors": {
+        
+    },
+    "data": null
+}</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>updateCompanyAccount----Completed</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>updateCompanyAccountWithActive----Completed</td></tr>
+<tr><td>-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------</td></tr>
+<tr><td>updateCompanyAccountWithInactive----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>updateCompanyAccount----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  200</td></tr>
+<tr><td>Passed: StatusCode is 200{
+    "returnStatus": true,
+    "statusCode": 200,
+    "returnMessage": [
+        "Successfully Updated."
+    ],
+    "errors": {
+        
+    },
+    "data": null
+}</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>updateCompanyAccount----Completed</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>updateCompanyAccountWithInactive----Completed</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>updateCompanyAccountPositiveScenarios----Completed</td></tr>
+<tr><td>updateCompanyAccount_NegativeScenarios----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------</td></tr>
+<tr><td>Case 1:-updateCompanyAccountWithBlankData----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>updateCompanyAccount----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  400</td></tr>
+<tr><td>Passed: StatusCode is 400{
+    "statusCode": 400,
+    "message": "Validation failed.",
+    "errors": [
+        {
+            "field": "Phone",
+            "message": "This field is required."
+        },
+        {
+            "field": "Email",
+            "message": "This field is required."
+        },
+        {
+            "field": "Ein",
+            "message": "This field is required."
+        },
+        {
+            "field": "CompanyName",
+            "message": "This field is required."
+        },
+        {
+            "field": "AddressLine1",
+            "message": "This field is required."
+        },
+        {
+            "field": "City",
+            "message": "This field is required."
+        },
+        {
+            "field": "State",
+            "message": "This field is required."
+        },
+        {
+            "field": "PostalCode",
+            "message": "This field is required."
+        },
+        {
+            "field": "PostalCode",
+            "message": "This field is required."
+        },
+        {
+            "field": "Timezone",
+            "message": "This field is required."
+        }
+    ]
+}</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>updateCompanyAccount----Completed</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>Case 1:-updateCompanyAccountWithBlankData----Completed</td></tr>
+<tr><td>-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------</td></tr>
+<tr><td>Case 2:-updateCompanyAccountWithLessThanDefinedInput----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>updateCompanyAccount----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  400</td></tr>
+<tr><td>Passed: StatusCode is 400{
+    "statusCode": 400,
+    "message": "Validation failed.",
+    "errors": [
+        {
+            "field": "Phone",
+            "message": "Invalid Phone Number. Phone Number needs to be of 10 digits."
+        },
+        {
+            "field": "Email",
+            "message": "Invalid email address."
+        },
+        {
+            "field": "Ein",
+            "message": "EIN should be Numeric and the acceptable format is xx-xxxxxxx."
+        },
+        {
+            "field": "CompanyName",
+            "message": "Enter at least 2 characters and at most 100 characters."
+        },
+        {
+            "field": "AddressLine1",
+            "message": "Enter at least 2 characters and at most 50 characters."
+        },
+        {
+            "field": "City",
+            "message": "Enter at least 2 characters and at most 30 characters."
+        },
+        {
+            "field": "State",
+            "message": "The length of 'State' must be at least 2 characters. You entered 1 characters."
+        },
+        {
+            "field": "PostalCode",
+            "message": "Invalid Postal Code. Postal Code needs to be of 5 digits."
+        },
+        {
+            "field": "CompanyLogo",
+            "message": "This file format is not supported."
+        },
+        {
+            "field": "Timezone",
+            "message": "Invalid Time Zone. Kindly enter the following Time-Zones : \"Eastern Standard Time\", \"Central Standard Time\", \"Alaskan Standard Time\", \"Pacific Standard Time\", \"Hawaiian Standard Time\", \"Atlantic Standard Time\"."
+        }
+    ]
+}</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>updateCompanyAccount----Completed</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>Case 2:-updateCompanyAccountWithLessThanDefinedInput----Completed</td></tr>
+<tr><td>-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------</td></tr>
+<tr><td>Case 3:-updateCompanyAccountWithMoreThanDefinedInput----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>updateCompanyAccount----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  400</td></tr>
+<tr><td>Passed: StatusCode is 400{
+    "statusCode": 400,
+    "message": "Validation failed.",
+    "errors": [
+        {
+            "field": "Phone",
+            "message": "Invalid Phone Number. Phone Number needs to be of 10 digits."
+        },
+        {
+            "field": "Email",
+            "message": "Invalid email address."
+        },
+        {
+            "field": "Ein",
+            "message": "EIN should be Numeric and the acceptable format is xx-xxxxxxx."
+        },
+        {
+            "field": "AddressLine1",
+            "message": "Enter at least 2 characters and at most 50 characters."
+        },
+        {
+            "field": "AddressLine2",
+            "message": "Enter at most 50 characters."
+        },
+        {
+            "field": "City",
+            "message": "Enter at least 2 characters and at most 30 characters."
+        },
+        {
+            "field": "State",
+            "message": "Please enter a valid State."
+        },
+        {
+            "field": "PostalCode",
+            "message": "Invalid Postal Code. Postal Code needs to be of 5 digits."
+        },
+        {
+            "field": "CompanyLogo",
+            "message": "This file format is not supported."
+        },
+        {
+            "field": "Timezone",
+            "message": "Invalid Time Zone. Kindly enter the following Time-Zones : \"Eastern Standard Time\", \"Central Standard Time\", \"Alaskan Standard Time\", \"Pacific Standard Time\", \"Hawaiian Standard Time\", \"Atlantic Standard Time\"."
+        }
+    ]
+}</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>updateCompanyAccount----Completed</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>Case 3:-updateCompanyAccountWithMoreThanDefinedInput----Completed</td></tr>
+<tr><td>-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------</td></tr>
+<tr><td>Case 4:-updateCompanyAccountWithSpaceAccountId----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>updateCompanyAccount----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  400</td></tr>
+<tr><td>Passed: StatusCode is 400{
+    "errors": {
+        "accountId": [
+            "The value '' is invalid."
+        ]
+    },
+    "type": "https://tools.ietf.org/html/rfc7231#section-6.5.1",
+    "title": "One or more validation errors occurred.",
+    "status": 400,
+    "traceId": "00-9909bc59ee812922fb8748cd435fc5f7-391971071962d6bb-00"
+}</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>updateCompanyAccount----Completed</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>Case 4:-updateCompanyAccountWithSpaceAccountId----Completed</td></tr>
+<tr><td>-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------</td></tr>
+<tr><td>Case 5:-updateCompanyAccountWithSpaceAccountStatus----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>updateCompanyAccount----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  400</td></tr>
+<tr><td>Passed: StatusCode is 400{
+    "errors": {
+        "accountId": [
+            "The value '' is invalid."
+        ],
+        "accountStatus": [
+            "The value '' is invalid."
+        ]
+    },
+    "type": "https://tools.ietf.org/html/rfc7231#section-6.5.1",
+    "title": "One or more validation errors occurred.",
+    "status": 400,
+    "traceId": "00-de4190d38f61ae1031cb3905c09ee7e1-1b9f6801ee356b48-00"
+}</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>updateCompanyAccount----Completed</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>Case 5:-updateCompanyAccountWithSpaceAccountStatus----Completed</td></tr>
+<tr><td>-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------</td></tr>
+<tr><td>Case 6:-updateCompanyAccountWithWrongAccountStatus----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>updateCompanyAccount----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  400</td></tr>
+<tr><td>Passed: StatusCode is 400{
+    "errors": {
+        "accountId": [
+            "The value 'Demo@1213' is not valid for AccountId."
+        ],
+        "accountStatus": [
+            "The value '5' is invalid."
+        ]
+    },
+    "type": "https://tools.ietf.org/html/rfc7231#section-6.5.1",
+    "title": "One or more validation errors occurred.",
+    "status": 400,
+    "traceId": "00-9e97b41fcd0206385ebe9c6490900b52-b9153812cbc6ce81-00"
+}</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>updateCompanyAccount----Completed</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>Case 6:-updateCompanyAccountWithWrongAccountStatus----Completed</td></tr>
+<tr><td>-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>updateCompanyAccount_NegativeScenarios----Completed</td></tr>
+<tr><td>whenMeasureResponseTime_thenOK for updateCompanyAccount----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>Time in Completion 598</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>whenMeasureResponseTime_thenOK for updateCompanyAccount----Completed</td></tr>
+<tr><td>createSingleUser----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createSingleUser----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>StatusCode:  200</td></tr>
+<tr><td>Passed: StatusCode is  200{
+    "returnStatus": true,
+    "statusCode": 200,
+    "returnMessage": [
+        
+    ],
+    "errors": {
+        
+    },
+    "data": {
+        "isUserAdded": true,
+        "message": "User added successfully."
+    }
+}</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createSingleUser----Completed</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>createSingleUser----Completed</td></tr>
+<tr><td>whenMeasureResponseTime_thenOK_For Get Access Token----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>Time in Completion 113</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>whenMeasureResponseTime_thenOK_For Get Access Token----Completed</td></tr>
+<tr><td>whenMeasureResponseTime_thenOK_For update Password----Started</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>Time in Completion 98</td></tr>
+<tr><td>*****************************************************</td></tr>
+<tr><td>whenMeasureResponseTime_thenOK_For update Password----Completed</td></tr>
+</table>
